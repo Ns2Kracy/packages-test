@@ -18,15 +18,15 @@ define Package/casaos-debugger
 endef
 
 define Package/casaos-debugger/description
-    CasaOS Debugger
+  CasaOS Debugger
 endef
 
 define Build/Compile
 endef
 
 define Package/casaos-debugger/install
-    $(INSTALL_DIR) $(1)/var/lib/extensions
-    $(CP) $(PKG_BUILD_DIR)/casaos-debugger.raw $(1)/var/lib/extensions
+	$(INSTALL_DIR) $(1)/var/lib/extensions
+	$(CP) $(PKG_BUILD_DIR)/casaos-debugger.raw $(1)/var/lib/extensions
 endef
 
 $(eval $(call BuildPackage,casaos-debugger))
